@@ -18,7 +18,6 @@ export default function BackgroundSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        adaptiveHeight: true
     };
     return (
         <Slider{...settings} className="slider_wrapper">
