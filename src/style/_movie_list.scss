@@ -3,8 +3,8 @@
         transform: scale(1.1);
         transition: all 0.3s ease;
         box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
-            -webkit-box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
-            -moz-box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
+        -webkit-box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -18,6 +18,13 @@
     text-align: center;
     font-family: 'Helvetica Neue';
     font-weight: 700;
+    min-height: 110px;
+}
+
+.release_year {
+    display: block;
+    text-align: center;
+    font-weight: 700;
 }
 
 .movies_list {
@@ -25,4 +32,8 @@
     justify-content: center;
 }
 
-
+.show_button {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}

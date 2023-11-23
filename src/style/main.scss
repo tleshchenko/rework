@@ -4,15 +4,8 @@
 @import 'main_content';
 @import 'movie_list';
 @import 'movie';
+@import 'modal';
 
-
-// .root {
-//     min-height: 100vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-
-// }
 
 .slider_wrapper {
     min-height: 100vh;
@@ -24,7 +17,8 @@
 body {
     width: 100%;
     max-width: 4096px;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica Neue';
+
 
 }
 

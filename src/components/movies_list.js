@@ -13,6 +13,8 @@ import {
 
 import { moviesStore } from '../store/movies_store.js';
 import { Link } from "react-router-dom";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+
 
 
 
@@ -23,7 +25,7 @@ export default function MoviesList() {
 
     const cardList = movies.map((item, index) => {
         return (
-            <Grid item xs={12} md={3} lg={2.4} xl={2.1} key={index}>
+            <Grid item xs={6} md={3} lg={2.4} xl={2.1} key={index}>
                 <Card className="grid_item" xs={{ maxWidth: 200 }}>
                     <CardMedia
                         component="img"
@@ -37,9 +39,9 @@ export default function MoviesList() {
                             <span className="release_year">Year: {item.Year}</span>
                         </div>
                     </CardContent>
-                    <CardActions>
-                        <Link to={`item/${item.imdbID}`}>
-                            <Button size="small">Show More</Button>
+                    <CardActions >
+                        <Link className="show_button" to={`item/${item.imdbID}`}>
+                            <Button endIcon={<VisibilityIcon/>} size="large">Show More</Button>
                         </Link>
                     </CardActions>
                 </Card>

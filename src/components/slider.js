@@ -1,7 +1,10 @@
 import Slider from "react-slick";
-import background from '../assets/img/208638.jpg';
-import background2 from '../assets/img/wp2203800-blade-runner-2049-wallpapers.jpg'
-
+import background from '../assets/img/background1.webp';
+import background2 from '../assets/img/background2.webp';
+import background3 from '../assets/img/background3.webp';
+import background4 from '../assets/img/background4.webp';
+import background5 from '../assets/img/background5.webp';
+import background6 from '../assets/img/background6.webp';
 
 
 export default function BackgroundSlider() {
@@ -25,7 +28,18 @@ export default function BackgroundSlider() {
             <div className="slide">
                 <img src={background2} alt="" />
             </div>
-
+            <div className="slide">
+                <img src={background3} alt="" />
+            </div>
+            <div className="slide">
+                <img src={background4} alt="" />
+            </div>
+            <div className="slide">
+                <img src={background5} alt="" />
+            </div>
+            <div className="slide">
+                <img src={background6} alt="" />
+            </div>
         </Slider>
     )
 }

@@ -25,7 +25,7 @@ export default function MovieItem() {
     const cardList = movies.map((item, index) => {
         return (
             <Grid item xs={6} md={2} lg={1} key={index}>
-                <Link to={`item/${item.imdbID}`}>
+                <Link relative='path' to={`/item/${item.imdbID}`}>
                     <Card className="grid_item" sx={{ maxWidth: 300 }}>
                         <CardMedia
                             sx={{ height: 200 }}

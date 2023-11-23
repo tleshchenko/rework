@@ -1,4 +1,5 @@
 import axios from 'axios';
+import SearchIcon from '@mui/icons-material/Search';
 
 import {
     Button,
@@ -80,7 +81,7 @@ export default function MovieSearch(props) {
                             </Select>
                         </Tooltip>
                     </FormControl>
-                    <Button type="submit" id="button" variant="contained" size="large">Search Movie</Button>
+                    <Button endIcon={<SearchIcon/>} type="submit" id="button" variant="contained" size="large">Search Movie</Button>
                 </form>
         </div>
     )

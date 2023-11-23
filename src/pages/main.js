@@ -12,7 +12,6 @@ export default function MainContent() {
     const [page, setPage] = useState(1);
     const results = useSyncExternalStore(moviesStore.subscribe, moviesStore.getResults);
     const movies = useSyncExternalStore(moviesStore.subscribe, moviesStore.getSnapshot);
-    const [active, setActive] = useState('');
 
     
     const handleChange = (event, value) =>{

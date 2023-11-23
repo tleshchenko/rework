@@ -1,0 +1,54 @@
+.modal_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal_desription {
+    font-family: $primaryFontFamily;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal_nav_list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item_link {
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+        color: orange;
+    }
+}
+
+.modal_logo {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.credits {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-family: $primaryFontFamily;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+
+    .beetroot_link {
+        color: orange;
+        font-family: $primaryFontFamily;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
+
+.year {
+    text-align: center;
+}
