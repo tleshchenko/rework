@@ -20,7 +20,7 @@ import {
 
 import { moviesStore } from '../store/movies_store.js';
 
-const API_URL = 'http://www.omdbapi.com/?apikey=c8f03185';
+const API_URL = 'https://www.omdbapi.com/?apikey=c8f03185';
 
 
 
