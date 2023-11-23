@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'main_content';
+@import 'movie_list';
+@import 'movie';
+
+
+// .root {
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+// }
+
+.slider_wrapper {
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;}
+
+body {
+    width: 100%;
+    max-width: 4096px;
+    font-family: 'Helvetica';
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+.error_message {
+    font-family: $primaryFontFamily;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    &.dnone {
+        display: none;
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+.slider_wrapper {
+    min-height: 100vh;
+}

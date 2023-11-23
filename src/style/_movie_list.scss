@@ -1,0 +1,28 @@
+.grid_item {
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+        box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: 8px 9px 12px -2px rgba(0, 0, 0, 0.7);
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.movie_title {
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+}
+
+.movies_list {
+    display: flex;
+    justify-content: center;
+}
+
+

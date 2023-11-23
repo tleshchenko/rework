@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'menda_black-webfont';
+    src: url(../assets/fonts/menda/menda_black-webfont.woff) format(woff);
+    src: url(../assets/fonts/menda/menda_black-webfont.woff2) format(woff2);
+    src: url(../assets/fonts/menda/menda_bold-webfont.woff) format(woff);
+    src: url(../assets/fonts/menda/menda_bold-webfont.woff2) format(woff2);
+    src: url(../assets/fonts/menda/menda_extrabold-webfont.woff) format(woff);
+    src: url(../assets/fonts/menda/menda_extrabold-webfont.woff2) format(woff2);
+}
+
+$primaryFontFamily: 'menda_black-webfont';

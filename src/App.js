@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { StrictMode } from 'react';
+import './style/reset.css'
+import './style/main.scss'
+import MainContent from './pages/main';
+import DefaultLayout from './layouts/default_layout';
+import { Route, Routes } from 'react-router-dom';
+import MovieItem from './pages/movie';
+
+import { ThemeProvider} from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
+import { useThemeContext } from './components/theme/themeContextProvider';
+
 
 function App() {
+  const { theme } = useThemeContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StrictMode>
+      <ThemeProvider theme={theme}>
+        <CssBaseline/>
+        <Routes>
+          <Route path="/" element={<DefaultLayout />}>
+            <Route index element={<MainContent />} />
+            <Route path='item/:id' element={<MovieItem />} />
+          </Route>
+        </Routes>
+      </ThemeProvider>
+    </StrictMode>
   );
 }
 

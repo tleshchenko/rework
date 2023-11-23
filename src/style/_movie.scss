@@ -1,0 +1,80 @@
+
+
+.item_content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.item_description {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .movie_header {
+        text-transform: uppercase;
+        font-family: $primaryFontFamily;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        background-color: orange;
+        color: #000000;
+    }
+}
+
+.main_description {
+    padding: 0 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.ratings {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1300px;
+}
+
+
+
+.nominated_block,
+.imdb_rating,
+.metacritic_rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.poster {
+    max-width: 310px;
+}
+
+.oscar_logo,
+.imdb_logo,
+.metascore_logo {
+    max-width: 35px;
+}
+
+.cardlist_block {
+    margin-bottom: 100px;
+}
+
+.cardslist_header {
+    font-family: $primaryFontFamily;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cardlist {
+    display: flex;
+    justify-content: space-between;
+}
