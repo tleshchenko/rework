@@ -11,7 +11,7 @@ import metascoreLogo from '../assets/img/metacritic.png'
 import { Card, CardMedia, Grid, Paper, Typography } from "@mui/material";
 import { moviesStore } from "../store/movies_store";
 
-const API_URL = 'http://www.omdbapi.com/?apikey=c8f03185';
+const API_URL = 'https://www.omdbapi.com/?apikey=c8f03185';
 
 export default function MovieItem() {
     const movies = useSyncExternalStore(moviesStore.subscribe, moviesStore.getSnapshot);
