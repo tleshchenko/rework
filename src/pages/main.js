@@ -24,7 +24,7 @@ export default function MainContent() {
             {movies ? <StrictMode>
                 <MoviesList/>
                 <div className="pagination_wrapper">
-                    { results ? <CssBaseline><Pagination count={Math.ceil(results/10)} onChange={handleChange} color="primary" shape="rounded" /></CssBaseline> :  }
+                    { results ? <CssBaseline><Pagination count={Math.ceil(results/10)} onChange={handleChange} color="primary" shape="rounded" /></CssBaseline> : <BackgroundSlider/> }
                 </div>
             </StrictMode> : <p className="error_message">No match </p>}
         </React.StrictMode>
